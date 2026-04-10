@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="https://image.s.grunenthal.com/lib/fe3d15707564047e7d1575/m/2/0317ec31-1eb4-4ed6-a9af-1daf178ca2ff.jpg" type="image/x-icon" />
+    <!-- preview -->
+    <!-- <meta property="og:image" content="https://image.s.grunenthal.com/lib/fe3e15707564047e7d1574/m/1/564f369a-9533-4e17-9d35-ee4cd12d03cf.png" /> -->
+    <title>Grünenthal Pharma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="%%=CloudPagesURL(6269)=%%" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    %%=ContentBlockbyKey("header-cl-plx-cronicasdolorpart2")=%%
+    <main>
+        <div class="main-content">
+            <div class="line-divider"></div>
+            <p class="event-description">
+                Su experiencia es clave para <span>seguir mejorando en la calidad de nuestros eventos para el manejo del dolor</span>.<br>
+                Cuéntenos cómo vivió esta edición de Crónicas de dolor 2026, y qué podemos mejorar para fortalecer las futuras conferencias.
+            </p>
+            <div class="line-divider"></div>
+            <section class="form-section">
+                <p class="form-title">Complete el siguiente formulario para recibir su certificado</p>
+                <div class="form-container">
+                    <!-- top decoration -->
+                    <div class="form-decoration-top form-decoration">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="116" viewBox="0 0 125 116" fill="none">
+                            <path d="M116.419 2.89064C116.519 4.8404 114.886 6.20236 82.1098 19.5783C81.9666 19.6356 81.809 19.693 81.6657 19.7503L122.263 19.951C123.066 19.951 123.61 20.6105 123.481 21.4133L110.445 102.4C109.414 109.081 103.139 114.5 96.478 114.5H11.8589C5.19761 114.5 0.613533 109.066 1.64495 102.4L15.8986 13.6C16.93 6.93352 23.2044 1.5 29.8657 1.5H114.485C116.147 1.5 116.376 2.47488 116.404 2.89064H116.419Z" stroke="#7D40FF" stroke-width="3" stroke-miterlimit="10" />
+                        </svg>
+                    </div>
+                    <!-- bottom decoration -->
+                    <div class="form-decoration-bottom form-decoration">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="181" height="181" viewBox="0 0 181 181" fill="none">
+                            <path d="M11.8573 176.605C11.7204 173.547 14.082 171.411 61.8943 150.448C62.0996 150.338 62.3049 150.264 62.5445 150.153L3.30106 149.822C2.13741 149.822 1.35027 148.79 1.5214 147.538L20.5505 20.4731C22.0564 10.0103 31.1944 1.5 40.9485 1.5H164.398C174.118 1.5 180.792 10.0103 179.286 20.4731L158.511 159.806C157.005 170.269 147.867 178.779 138.113 178.779H14.6638C12.2338 178.779 11.8915 177.268 11.8573 176.605Z" stroke="#FF41E3" stroke-width="3" stroke-miterlimit="10" />
+                        </svg>
+                    </div>
+                    <form id="survey-form" class="form survey-form" method="POST" action="%%=CloudPagesURL(6260, 'posted', 1, 'source', @source, 'contactId', @contactId)=%%">
+                        <!-- PREGUNTA 1 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                1. ¿Qué tan satisfecho está con su experiencia en Crónicas de dolor 2026?<span class="req">*</span>
+                            </p>
+                            <p class="survey-scale-hint">(1: muy mala experiencia, 5: la mejor experiencia)</p>
+                            <div class="scale-buttons" id="scale-q1">
+                                <button type="button" class="scale-btn" data-value="1" onclick="selectScale('q1', 1)">1</button>
+                                <button type="button" class="scale-btn" data-value="2" onclick="selectScale('q1', 2)">2</button>
+                                <button type="button" class="scale-btn" data-value="3" onclick="selectScale('q1', 3)">3</button>
+                                <button type="button" class="scale-btn" data-value="4" onclick="selectScale('q1', 4)">4</button>
+                                <button type="button" class="scale-btn" data-value="5" onclick="selectScale('q1', 5)">5</button>
+                            </div>
+                            <input type="hidden" name="satisfaccion_general" id="val-q1" required />
+                            <p class="error" id="error-q1">Este campo es obligatorio</p>
+                        </div>
+                        <div class="survey-divider"></div>
+                        <!-- PREGUNTA 2 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                2. ¿Cuál es el motivo principal de su respuesta anterior?<span class="req">*</span>
+                            </p>
+                            <div class="survey-checkboxes">
+                                <label class="survey-checkbox">
+                                    <input type="radio" name="motivo" value="speakers_internacionales" />
+                                    <span class="replace-checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    </span>
+                                    <span>Calidad de los speakers internacionales</span>
+                                </label>
+                                <label class="survey-checkbox">
+                                    <input type="radio" name="motivo" value="speakers_nacionales" />
+                                    <span class="replace-checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    </span>
+                                    <span>Calidad de los speakers nacionales</span>
+                                </label>
+                                <label class="survey-checkbox">
+                                    <input type="radio" name="motivo" value="temas_evento" />
+                                    <span class="replace-checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    </span>
+                                    <span>Calidad de los temas tratados en el evento</span>
+                                </label>
+                                <label class="survey-checkbox">
+                                    <input type="radio" name="motivo" value="casos_clinicos" />
+                                    <span class="replace-checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    </span>
+                                    <span>Calidad de los casos clínicos tratados</span>
+                                </label>
+                            </div>
+                            <p class="error" id="error-q2">Este campo es obligatorio</p>
+                        </div>
+                        <div class="survey-divider"></div>
+                        <!-- PREGUNTA 3 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                3. ¿Cómo podríamos mejorar este evento para el próximo año?<span class="req">*</span>
+                            </p>
+                            <textarea name="mejoras" id="mejoras" class="survey-textarea" placeholder="Escriba su respuesta aquí..." required></textarea>
+                            <p class="error" id="error-q3">Este campo es obligatorio</p>
+                        </div>
+                        <div class="survey-divider"></div>
+                        <!-- PREGUNTA 4 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                4. ¿Qué tan valioso fueron los conversatorios para aprender de otros expertos?
+                            </p>
+                            <p class="survey-scale-hint">(1: Poco valioso, 5: Muy valioso)</p>
+                            <div class="scale-buttons" id="scale-q4">
+                                <button type="button" class="scale-btn" data-value="1" onclick="selectScale('q4', 1)">1</button>
+                                <button type="button" class="scale-btn" data-value="2" onclick="selectScale('q4', 2)">2</button>
+                                <button type="button" class="scale-btn" data-value="3" onclick="selectScale('q4', 3)">3</button>
+                                <button type="button" class="scale-btn" data-value="4" onclick="selectScale('q4', 4)">4</button>
+                                <button type="button" class="scale-btn" data-value="5" onclick="selectScale('q4', 5)">5</button>
+                            </div>
+                            <input type="hidden" name="valor_conversatorios" id="val-q4" />
+                        </div>
+                        <div class="survey-divider"></div>
+                        <!-- PREGUNTA 5 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                5. ¿Qué le pareció la calidad del almuerzo?
+                                <span class="survey-optional">(sólo responder si asistió formato presencial)</span>
+                            </p>
+                            <p class="survey-scale-hint">(1: muy mala, 5: la mejor)</p>
+                            <div class="scale-buttons" id="scale-q5">
+                                <button type="button" class="scale-btn" data-value="1" onclick="selectScale('q5', 1)">1</button>
+                                <button type="button" class="scale-btn" data-value="2" onclick="selectScale('q5', 2)">2</button>
+                                <button type="button" class="scale-btn" data-value="3" onclick="selectScale('q5', 3)">3</button>
+                                <button type="button" class="scale-btn" data-value="4" onclick="selectScale('q5', 4)">4</button>
+                                <button type="button" class="scale-btn" data-value="5" onclick="selectScale('q5', 5)">5</button>
+                            </div>
+                            <input type="hidden" name="calidad_almuerzo" id="val-q5" />
+                        </div>
+                        <div class="survey-divider"></div>
+                        <!-- PREGUNTA 6 -->
+                        <div class="survey-question">
+                            <p class="survey-question-label">
+                                6. ¿Cómo le pareció la transmisión on line?
+                                <span class="survey-optional">(sólo responder si asistió vía streaming)</span>
+                            </p>
+                            <p class="survey-scale-hint">(1: muy mala, 5: muy buena)</p>
+                            <div class="scale-buttons" id="scale-q6">
+                                <button type="button" class="scale-btn" data-value="1" onclick="selectScale('q6', 1)">1</button>
+                                <button type="button" class="scale-btn" data-value="2" onclick="selectScale('q6', 2)">2</button>
+                                <button type="button" class="scale-btn" data-value="3" onclick="selectScale('q6', 3)">3</button>
+                                <button type="button" class="scale-btn" data-value="4" onclick="selectScale('q6', 4)">4</button>
+                                <button type="button" class="scale-btn" data-value="5" onclick="selectScale('q6', 5)">5</button>
+                            </div>
+                            <input type="hidden" name="calidad_streaming" id="val-q6" />
+                        </div>
+                        <!-- LEGAL SECTION -->
+                        <div class="survey-question">
+                            <div class="survey-checkboxes">
+                                <!-- Checkbox 1: Política de Privacidad -->
+                                <div class="legal">
+                                    <label class="survey-checkbox">
+                                        <input type="checkbox" name="privacidad" id="privacidad" required="">
+                                        <span class="replace-checkbox">
+                                            <svg width="14" height="14" viewBox="0 0 18 18">
+                                                <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="3" fill="none"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="consent">Entiendo que los datos personales solicitados para esta actividad serán procesados de acuerdo a nuestra <a href="https://www.grunenthal.cl/es-cl/footer-links/politica-proteccion-datos" target="_blank" style="color: var(--pink); text-decoration: underline;">Política de Privacidad</a>. <span class="req">*</span></div>
+                                    </label>
+                                    <p class="error" id="error-privacidad">Debe aceptar la política de privacidad.</p>
+                                </div>
+                                <!-- Checkbox 2: E-Consent -->
+                                <div class="legal" style="margin-top: 15px;">
+                                    <label class="survey-checkbox">
+                                        <input type="checkbox" name="e_consent" id="e_consent">
+                                        <span class="replace-checkbox">
+                                            <svg width="14" height="14" viewBox="0 0 18 18">
+                                                <path d="M2 9l5 5 9-9" stroke="#fff" stroke-width="3" fill="none"></path>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <div class="consent">Autorización E-Consent (recolección datos de contacto)</div><br>
+                                            <div class="econsent">
+                                                Por la presente otorgo consentimiento informado a Grünenthal GmbH (Zieglerstraße 6, 52099 Aachen, Alemania), y/o Laboratorios Andrómaco S.A., Grünenthal Chilena Ltda. y Laboratorios Silesia S.A., las que conjuntamente se denominarán para efectos de la presente autorización como “Grünenthal”, para tratar mis datos personales (en particular datos profesionales, información acerca de mis interacciones con Grünenthal, incluyendo el uso de los medicamentos de Grünenthal, así como de servicios digitales y no-digitales e intereses profesionales), de fuentes disponibles en internet y fuera de internet, para contactarme vía correo electrónico, teléfono, llamadas remotas, reuniones web, mensajes de texto o mensajes multimedia o medios similares, para suministrarme información de mercadeo, realizar investigaciones de mercado (incluyendo la transferencia de mis datos a proveedores de servicios para proyectos de investigaciones de mercado) en relación con los medicamentos, servicios, eventos y otras actividades de Grünenthal, descritas en mayor detalle en nuestra Declaración de privacidad | Grünenthal Latinoamérica (grunenthal.com). <br> Con base en mi consentimiento, Grünenthal creará un perfil de cliente para personalizar y mejorar mi experiencia y las comunicaciones conmigo, por ejemplo, ofreciéndome eventos específicos, otras actividades, medicamentos y servicios de Grünenthal con base en mis preferencias e intereses. Podré modificar, actualizar, corregir y retirar mi consentimiento en cualquier momento, enviando un correo electrónico a la dirección de correo electrónico dataprivacy.cl@grunenthal.com, o usando la opción de cancelar suscripción en el vínculo al final de cualquier correo electrónico que haya recibido de Grünenthal.
+
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SUBMIT  -->
+                        <button type="submit" id="submit-btn" class="submit-btn">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="gradient"></div>
+    %%=ContentBlockbyKey("footer_cl_plx_cronicasdolorpart2")=%%
+    <script>
+    function selectScale(questionId, value) {
+        const container = document.getElementById('scale-' + questionId);
+        const buttons = container.querySelectorAll('.scale-btn');
+        buttons.forEach(btn => {
+            if (parseInt(btn.dataset.value) <= value) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        document.getElementById('val-' + questionId).value = value;
+        const errEl = document.getElementById('error-' + questionId);
+        if (errEl) errEl.style.display = 'none';
+    }
+
+    document.getElementById('survey-form').addEventListener('submit', function(e) {
+        let valid = true;
+
+        // Q1
+        if (!document.getElementById('val-q1').value) {
+            document.getElementById('error-q1').style.display = 'block';
+            valid = false;
+        }
+
+        // Q2
+        const checkboxes = document.querySelectorAll('input[name="motivo"]:checked');
+        if (checkboxes.length === 0) {
+            document.getElementById('error-q2').style.display = 'block';
+            valid = false;
+        } else {
+            document.getElementById('error-q2').style.display = 'none';
+        }
+
+        // Q3
+        const mejoras = document.getElementById('mejoras');
+        if (!mejoras.value.trim()) {
+            document.getElementById('error-q3').style.display = 'block';
+            valid = false;
+        } else {
+            document.getElementById('error-q3').style.display = 'none';
+        }
+
+        // Q4
+        if (!document.getElementById('val-q4').value) {
+            // Q4 is optional, no validation needed
+        }
+
+        if (!valid) e.preventDefault();
+    });
+
+    // Hide radio error on change
+    document.querySelectorAll('input[name="motivo"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+            document.getElementById('error-q2').style.display = 'none';
+        });
+    });
+
+    // Hide textarea error on input
+    document.getElementById('mejoras').addEventListener('input', () => {
+        document.getElementById('error-q3').style.display = 'none';
+    });
+    </script>
+</body>
+
+</html>
